@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.1 on win32)" generated="20230831 23:18:30.555" rpa="false" schemaversion="4">
+<suite id="s1" name="TC3 &amp; TC4">
+<suite id="s1-s1" name="TC3" source="C:\Users\Mandala Swathi\PycharmProjects\Robott\basics\TC3.Robot">
+<test id="s1-s1-t1" name="Launch Login Page" line="10">
+<kw name="Launch an application">
+<arg>${homeurl}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230831 23:18:31.230" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/index.html'.</msg>
+<status status="PASS" starttime="20230831 23:18:31.227" endtime="20230831 23:18:35.707"/>
+</kw>
+<status status="PASS" starttime="20230831 23:18:31.226" endtime="20230831 23:18:35.707"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230831 23:18:35.712" level="INFO">Clicking element 'id:login2'.</msg>
+<status status="PASS" starttime="20230831 23:18:35.710" endtime="20230831 23:18:36.381"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" starttime="20230831 23:18:31.224" endtime="20230831 23:18:36.382"/>
+</test>
+<status status="PASS" starttime="20230831 23:18:30.617" endtime="20230831 23:18:36.384"/>
+</suite>
+<suite id="s1-s2" name="TC4" source="C:\Users\Mandala Swathi\PycharmProjects\Robott\basics\TC4.Robot">
+<test id="s1-s2-t1" name="Select value from Drop Down" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230831 23:18:36.444" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<status status="PASS" starttime="20230831 23:18:36.442" endtime="20230831 23:18:45.099"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>Skills</arg>
+<arg>4</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230831 23:18:45.102" level="INFO">Selecting options from selection list 'Skills' by index 4.</msg>
+<status status="PASS" starttime="20230831 23:18:45.100" endtime="20230831 23:18:46.060"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:msdd</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230831 23:18:46.063" level="INFO">Clicking element 'id:msdd'.</msg>
+<status status="PASS" starttime="20230831 23:18:46.061" endtime="20230831 23:18:46.460"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[text()='English']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230831 23:18:46.463" level="INFO">Clicking element 'xpath://a[text()='English']'.</msg>
+<status status="PASS" starttime="20230831 23:18:46.462" endtime="20230831 23:18:46.732"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230831 23:18:51.736" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230831 23:18:46.734" endtime="20230831 23:18:51.736"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" starttime="20230831 23:18:36.440" endtime="20230831 23:18:51.737"/>
+</test>
+<status status="PASS" starttime="20230831 23:18:36.414" endtime="20230831 23:18:51.739"/>
+</suite>
+<status status="PASS" starttime="20230831 23:18:30.559" endtime="20230831 23:18:51.741"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="TC3 &amp; TC4">TC3 &amp; TC4</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC3">TC3 &amp; TC4.TC3</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TC4">TC3 &amp; TC4.TC4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
